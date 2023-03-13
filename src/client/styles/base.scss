@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex: 2;
+
+    h2 {
+        font-size: 30px;
+    }
+
+    section {
+        max-width: 50%;
+        margin: 50px auto;
+    }
+
+    #results{
+        line-height: 20px;
+    
+        P {
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    #explainer{
+        border: 10px dashed red;
+        border-radius: 3px;
+        padding: 40px;
+        background-color: yellow;
+        visibility: hidden;
+    }
+}

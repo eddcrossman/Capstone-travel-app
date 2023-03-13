@@ -1,0 +1,29 @@
+%H-Elements {
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+   // background-image: url(../img/header.jpg);
+    background-size: contain;
+    background-position-x: center;
+
+
+    h1 {
+        @extend %H-Elements;
+        text-decoration: underline;
+        font-size: 50px;
+    }
+
+    h2 {
+        @extend %H-Elements;    
+        font-size: 30px;
+    }
+}

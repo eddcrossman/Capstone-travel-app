@@ -1,0 +1,35 @@
+form {
+    border: 10px dashed red;
+    border-radius: 3px;
+    padding: 40px;
+    background-color: yellow;
+
+    label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 5px 20px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+
+        &[type="text"] {
+            font-size: 15px;
+        }
+
+        &[type="submit"]{
+            font-size: 25px;
+            font-weight: bold;
+            height: 100px;
+            background-color: yellow;
+            box-shadow: 10px 10px;
+
+            &:hover{
+                background-color: orange;
+
+            }
+        }
+    }
+}
