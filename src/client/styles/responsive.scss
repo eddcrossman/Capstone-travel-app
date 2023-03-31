@@ -1,0 +1,31 @@
+@media(min-width:1200px) {
+    h2 {    
+        font-size: 3vmin;
+    }
+
+    h3 {
+        font-size: 2vmin;
+    }
+
+    .main {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 48% 48%;
+        overflow-y: scroll;
+        padding-top: 1vh;
+        row-gap: 1vh;
+        gap: 1vh 2vw;
+    }  
+
+    .card {
+        border-left: 5px solid #611C46;
+        border-right: 5px solid #611C46;
+    }
+
+    .input {
+        justify-self: center;
+        border-left: 5px solid #611C46;
+        border-right: 5px solid #611C46;
+        width: 1200px;
+    }
+}

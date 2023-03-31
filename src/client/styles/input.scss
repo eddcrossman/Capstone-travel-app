@@ -1,0 +1,41 @@
+.input {
+    grid-area: in;
+    display: flex;
+    flex-direction: column;
+
+    border-top: 5px solid #611C46;
+
+    .input-group {
+        flex-grow: 1;
+        display: flex;
+
+        input {
+            width: 75%;
+
+            &:hover:enabled{
+                background-color: orange;
+            }
+        }
+        
+        label {
+            width: 25%;
+            text-indent: 10px;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        select {
+            width: 75%;
+
+            &:hover:enabled{
+                background-color: orange;
+            }
+        }
+    }
+
+    #select-input-group {
+        display: none;
+    }
+}

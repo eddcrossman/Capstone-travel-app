@@ -1,21 +1,24 @@
-import { getData } from './js/app'
-import { postData } from './js/app'
-import { getOpenWeatherURL } from './js/app'
-import { clickFunction } from './js/app'
+import { clickEventFunction } from './js/app'
+import { updateDateElements } from './js/app'
+import { addDestination } from './js/app'
 
 
-
-
-import './styles/resets.scss'
 import './styles/base.scss'
-import './styles/footer.scss'
-import './styles/form.scss'
-import './styles/header.scss'
-import './styles/style.scss'
+import './styles/input.scss'
+import './styles/card.scss'
+import './styles/responsive.scss'
+
+document.addEventListener('click', clickEventFunction);
+document.addEventListener('DOMContentLoaded', ()=>{    
+    updateDateElements(new Date(), true);
+});
+
+document.getElementById('start-date-select').addEventListener('change', (event)=>{
+    updateDateElements(event.target.value, false);
+})
 
 export {
-    getData,
-    postData,
-    getOpenWeatherURL,
-    clickFunction
+    clickEventFunction,
+    updateDateElements,
+    addDestination
 }
